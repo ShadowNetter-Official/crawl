@@ -1,0 +1,9 @@
+[package]
+name = "crawl"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+colored = "3.0.0"
+scraper = "0.24.0"
+ureq = "3.1.2"
