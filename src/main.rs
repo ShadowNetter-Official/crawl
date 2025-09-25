@@ -17,16 +17,15 @@ fn main() {
     request(argv[1].clone(), &mut visited);
 }
 
-fn http(url: String) -> String {
-    let request = match ureq::get(&url).call() {
-        Ok(request) => request,
-        Err(_) => return String::new(),
-    };
-    let response: String = match request.into_string() {
-        Ok(response) => response,
-        Err(_) => return String::new(),
-    };
-    response
+fn http(url: String) -> String { 
+    let request = match ureq::get(&url).call() { 
+        Ok(request) => request, 
+        Err(_) => return String::new(), 
+    }; 
+    let response: String = match request.into_string() { 
+        Ok(response) => response, 
+        Err(_) => return String::new(), }; 
+    response 
 }
 
 // find all <a> elements and return vector of links
