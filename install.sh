@@ -5,8 +5,8 @@ echo "crawl"
 echo "by ShadowNetter"
 echo
 echo "cloning into repo..."
-git clone https://github.com/ShadowNetter-Official/dictate
-cd dictate
+git clone https://github.com/ShadowNetter-Official/crawl
+cd crawl
 echo "done"
 echo "installing..."
 cargo build --release
